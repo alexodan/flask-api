@@ -32,8 +32,17 @@ El proyecto está organizado de la siguiente manera:
 1. Instala Python 3.x en tu sistema si aún no lo tienes.
 2. Crea un entorno virtual:
 
-   ```bash
-   python3 -m venv venv
+Mac os
+
+```bash
+python3 -m venv venv
+```
+
+Windows
+
+```
+py -3 -m venv .venv
+```
 
 ## Ejecutar la Aplicación
 
