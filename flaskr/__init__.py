@@ -1,7 +1,7 @@
 import os
 import requests
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template
 
 
 def read_access_key_from_file(file_path):
@@ -30,11 +30,13 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    # a simple page that says hello
+    @app.route("/")
+    def home():
+        return "Nada por aqui"
+
     @app.route("/products")
     def get_products():
         access_key = read_access_key_from_file("config.txt")
-        print(f"accesskey:{access_key}")
         headers = {"x-access-key": access_key}
         response = requests.get(
             "https://api.jsonbin.io/v3/b/65b3d105dc746540189b910d", headers=headers
