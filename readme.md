@@ -1,3 +1,7 @@
+# TODO:
+
+[] Agregar toml para manejar dependencias https://github.com/Rviewer-Challenges/skeleton-py-flask-rest/blob/main/pyproject.toml
+
 # Proyecto E-commerce con Flask
 
 Este proyecto es un esqueleto básico para una aplicación de e-commerce utilizando Flask y Jinja. Incluye una grilla de productos y una barra lateral de filtros. Es ideal para practicar y aprender más sobre el desarrollo web con Python.
