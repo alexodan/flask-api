@@ -21,34 +21,36 @@
               <div
                 class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"
               ></div>
-              <ul>
+              <!-- unordered list -->
+              <!-- ol -> ordered list -->
+              <ul class="filters" data-filter-name="categories">
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-400">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="biscuits" name="categories" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg">Biscuits</span>
                   </label>
                 </li>
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-400">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="fruits" name="categories" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg">Fruits</span>
                   </label>
                 </li>
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-400">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="seafood" name="categories" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg">Seafood</span>
                   </label>
                 </li>
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-400">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="vegetables" name="categories" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg">Vegetables</span>
                   </label>
                 </li>
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-400">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="frozen-foods-staples" name="categories" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg">Frozen Foods &amp; Staples</span>
                   </label>
                 </li>
@@ -63,16 +65,16 @@
               <div
                 class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"
               ></div>
-              <ul>
+              <ul class="filters" data-filter-name="product_status">
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-300">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="in-stock" name="product_status" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg dark:text-gray-400">In Stock</span>
                   </label>
                 </li>
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-300">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="on-sale" name="product_status" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg dark:text-gray-400">On Sale</span>
                   </label>
                 </li>
@@ -85,28 +87,28 @@
               <div
                 class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"
               ></div>
-              <ul>
+              <ul class="filters" data-filter-name="brand">
                 <li class="mb-4">
                   <label for="" class="flex items-center dark:text-gray-300">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                    <input value="apple" name="brand" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg dark:text-gray-400">Apple</span>
                   </label>
                 </li>
                 <li class="mb-4">
-                  <label for="" class="flex items-center dark:text-gray-300">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                  <label for="oreo" class="flex items-center dark:text-gray-300">
+                    <input value="" name="brand" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg dark:text-gray-400">Oreo</span>
                   </label>
                 </li>
                 <li class="mb-4">
-                  <label for="" class="flex items-center dark:text-gray-300">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                  <label for="mango" class="flex items-center dark:text-gray-300">
+                    <input value="" name="brand" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg dark:text-gray-400">Mango</span>
                   </label>
                 </li>
                 <li class="mb-4">
-                  <label for="" class="flex items-center dark:text-gray-300">
-                    <input type="checkbox" class="w-4 h-4 mr-2" />
+                  <label for="nebico" class="flex items-center dark:text-gray-300">
+                    <input value="" name="categories" type="checkbox" class="w-4 h-4 mr-2" />
                     <span class="text-lg dark:text-gray-400">Nebico</span>
                   </label>
                 </li>
@@ -371,4 +373,5 @@
       </div>
     </section>
   </body>
+  <script src="{{ url_for('static', filename='index.js') }}"></script>
 </html>

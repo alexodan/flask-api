@@ -36,6 +36,9 @@ def create_app(test_config=None):
 
     @app.route("/products")
     def get_products():
+        # agarrar el query param "categories" (averiguar como)
+        # si existe, filtrar los productos que tengan esa categoria
+        # si no, devolver todos los productos
         access_key = read_access_key_from_file("config.txt")
         headers = {"x-access-key": access_key}
         response = requests.get(
